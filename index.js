@@ -89,7 +89,7 @@ function gitlog(options, cb) {
   }
 
   if (options.file) {
-    command += ' -- ' + options.file
+    command += ' -- ' + options.file.join(" ")
   }
 
   //File and file status
